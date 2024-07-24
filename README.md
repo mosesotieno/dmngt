@@ -24,9 +24,9 @@ devtools::install_github("mosesotieno/dmngt")
 
 ## Usage
 
-A fairly common example is on dealing with **multiselct** variables. One
-may want to create a variable that utilizes all the responses given by
-this set of variables. An example may presence of a condition where a
+A fairly common example is on dealing with **multiselect** variables.
+One may want to create a variable that utilizes all the responses given
+by this set of variables. An example may presence of a condition where a
 list of conditions is given one has to pick from that list. One may have
 multiple conditions and one may have none. Suppose the data manager
 wants to create a variable that checks for any condition regardless of
@@ -42,17 +42,17 @@ df <- data.frame (id = 1:10,
 
 df |> dplyr::mutate(v4 = anymatch("var"))
 #>    id var1 var2 var3  v4
-#> 1   1   NA   NA   NA  No
-#> 2   2    1    2   NA Yes
-#> 3   3    1    1   NA Yes
-#> 4   4    2    2    1 Yes
-#> 5   5    1    2    1 Yes
-#> 6   6    2   NA   NA Yes
-#> 7   7    2    2   NA Yes
-#> 8   8    2    1    2 Yes
-#> 9   9   NA    1   NA Yes
-#> 10 10    1   NA    2 Yes
+#> 1   1   NA   NA    2 Yes
+#> 2   2    1   NA   NA Yes
+#> 3   3    2    2   NA Yes
+#> 4   4    1    1    1 Yes
+#> 5   5    1    2    2 Yes
+#> 6   6    2   NA    2 Yes
+#> 7   7   NA   NA    1 Yes
+#> 8   8    1    1    2 Yes
+#> 9   9    2    1    1 Yes
+#> 10 10    2    2    2 Yes
 ```
 
-Most of the time, the multiselect variables have give given pattern.
-Give the pattern that matches the variables that you are interested in.
+Most of the time, the multiselect variables have a given pattern. Give
+the pattern that matches the variables that you are interested in.

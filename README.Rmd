@@ -31,7 +31,7 @@ devtools::install_github("mosesotieno/dmngt")
 
 ## Usage
 
-A fairly common example is on dealing with __multiselct__ variables. One may want to create a variable that utilizes all the responses given by this set of variables. An example may presence of a condition where a list of conditions is given one has to pick from that list. One may have multiple conditions and one may have none. Suppose the data manager wants to create a variable that checks for any condition regardless of quantity then the `dmngt::anymatch()` function will come in very hand. This exactly what it does. 
+A fairly common example is on dealing with __multiselect__ variables. One may want to create a variable that utilizes all the responses given by this set of variables. An example may presence of a condition where a list of conditions is given one has to pick from that list. One may have multiple conditions and one may have none. Suppose the data manager wants to create a variable that checks for any condition regardless of quantity then the `dmngt::anymatch()` function will come in very hand. This exactly what it does. 
 
 ```{r example}
 library(dmngt)
@@ -43,4 +43,4 @@ df <- data.frame (id = 1:10,
 df |> dplyr::mutate(v4 = anymatch("var"))
 ```
 
-Most of the time, the multiselect variables have give given pattern. Give the pattern that matches the variables that you are interested in. 
+Most of the time, the multiselect variables have a given pattern. Give the pattern that matches the variables that you are interested in. 
