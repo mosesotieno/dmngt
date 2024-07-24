@@ -2,7 +2,7 @@
 % Please edit documentation in R/any_yes.R
 \name{any_yes}
 \alias{any_yes}
-\title{Title}
+\title{Collapse variables with 'Yes' response into one variable}
 \usage{
 any_yes(varcollapse)
 }
@@ -13,7 +13,7 @@ any_yes(varcollapse)
 A binary character vector with Yes or No
 }
 \description{
-Title
+Collapse variables with 'Yes' response into one variable
 }
 \examples{
 df <- data.frame (id = 1:10,

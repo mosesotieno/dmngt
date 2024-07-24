@@ -1,4 +1,4 @@
-#' Title
+#' Collapse variables with 'Yes' response into one variable
 #'
 #' @param varcollapse The list of variables that you want to use to create the variable mentioned
 #'
