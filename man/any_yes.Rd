@@ -4,17 +4,13 @@
 \alias{any_yes}
 \title{Title}
 \usage{
-any_yes(.data, variable, varcollapse)
+any_yes(varcollapse)
 }
 \arguments{
-\item{.data}{Dataframe that you want to create the variable in}
-
-\item{variable}{The variable name that you want to give to collapsed variable}
-
 \item{varcollapse}{The list of variables that you want to use to create the variable mentioned}
 }
 \value{
-Dataframe with the newly created variable
+A binary character vector with Yes or No
 }
 \description{
 Title
@@ -24,5 +20,5 @@ df <- data.frame (id = 1:10,
 var1 = factor(round(runif(20, 1, 3)),labels = c("Yes", "No", "N/A")),
 var2 = factor(round(runif(20, 1, 3)),labels = c("Yes", "No", "N/A")),
 var3 = factor(round(runif(20, 1, 3)),labels = c("Yes", "No", "N/A")))
-df |> any_yes("ouctome", c("var1", "var2", "var3"))
+df |> dplyr::mutate(ouctome =  any_yes(c("var1", "var2", "var3")))
 }
