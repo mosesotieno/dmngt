@@ -2,3 +2,4 @@
 
 export(anymatch)
 export(labels_keep)
+export(labels_restore)
