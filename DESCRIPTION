@@ -1,9 +1,9 @@
 Package: dmngt
-Title: What the Package Does (One Line, Title Case)
+Title: Data Management Functions 
 Version: 0.0.0.9000
 Authors@R: 
-    person("Moses", "Otieno", , "mosotieno25@gmail.com")
-Description: What the package does (one paragraph).
+    person("Moses", "Otieno", , "mosotieno25@gmail.com", role=c("aut","cre"))
+Description: Curated functions for common data management tasks. They make data management fun and exciting. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
