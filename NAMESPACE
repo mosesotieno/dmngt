@@ -2,5 +2,6 @@
 
 export(any_yes)
 export(anymatch)
+export(export_excel)
 export(labels_keep)
 export(labels_restore)
